@@ -1,9 +1,18 @@
-package com.bran.searchengine;
+package com.bran.search.service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import com.bran.searchengine.SearchEngine;
+import com.bran.searchengine.models.SearchResultGroup;
+
+/**
+ * Simple aggregator which calls all the search engines and combines them into a list
+ * 
+ * @author bwong
+ *
+ */
 public class SearchAggregator {
 
 	private final List<SearchEngine> searchEngines = new ArrayList<SearchEngine>();

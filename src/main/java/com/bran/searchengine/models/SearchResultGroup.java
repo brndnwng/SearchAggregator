@@ -1,10 +1,12 @@
-package com.bran.searchengine;
+package com.bran.searchengine.models;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.lang3.StringUtils;
+
 public class SearchResultGroup {
-	private String searchEngineName;
+	private String searchEngineName = StringUtils.EMPTY;
 	private List<SearchResult> searchResults;
 
 	public SearchResultGroup() {

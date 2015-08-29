@@ -1,16 +1,15 @@
 package com.bran.application;
 
-import java.util.Arrays;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
+import com.bran.search.service.SearchAggregator;
 import com.bran.searchengine.Bing;
 import com.bran.searchengine.DuckDuckGo;
 import com.bran.searchengine.Google;
-import com.bran.searchengine.SearchAggregator;
+import com.bran.searchengine.SearchEngine;
 
 @SpringBootApplication
 @ComponentScan("com.bran.controllers")
@@ -33,7 +32,7 @@ public class Application {
 
 	@Bean
 	public SearchAggregator searchAggregator() {
-		return new SearchAggregator(google(),duckduckgo(), bing());
+		return new SearchAggregator(google(), duckduckgo(), bing());
 	}
 
 	public static void main(String[] args) {

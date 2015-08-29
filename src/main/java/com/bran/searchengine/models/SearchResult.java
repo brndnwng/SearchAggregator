@@ -1,10 +1,12 @@
-package com.bran.searchengine;
+package com.bran.searchengine.models;
+
+import org.apache.commons.lang3.StringUtils;
 
 public class SearchResult {
 
-	private String url;
-	private String title;
-	private String description;
+	private String url = StringUtils.EMPTY;
+	private String title = StringUtils.EMPTY;
+	private String description = StringUtils.EMPTY;
 
 	public String getUrl() {
 		return url;
