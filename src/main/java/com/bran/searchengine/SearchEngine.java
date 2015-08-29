@@ -10,10 +10,12 @@ import org.jsoup.nodes.Document;
 import com.bran.searchengine.models.SearchResult;
 import com.bran.searchengine.models.SearchResultGroup;
 import com.bran.utils.JsoupUtils;
+
 /**
  * Implementations of this class can be passed into the SearchAggregator.
  * 
  * Implementations should override parseResults which should be the code used to parse the actual search engine page
+ * 
  * @author bwong
  *
  */

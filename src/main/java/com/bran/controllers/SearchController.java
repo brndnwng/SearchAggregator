@@ -29,7 +29,7 @@ public class SearchController {
 		this.searchAggregator = searchAggregator;
 	}
 
-	@RequestMapping(produces = MediaType.APPLICATION_JSON_VALUE, method = RequestMethod.GET, value = "/")
+	@RequestMapping(produces = MediaType.APPLICATION_JSON_VALUE, method = RequestMethod.GET, value = "/search")
 	@ResponseBody
 	public List<SearchResultGroup> index(@RequestParam(value = "query", required = true) String query) {
 		if (StringUtils.isEmpty(query)) throw new IllegalArgumentException("Missing or empty param: query");

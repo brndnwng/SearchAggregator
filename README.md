@@ -3,7 +3,7 @@ This project aggregates the first page of search results from Google, Bing, and 
 It is built using spring boot. Maven is used for dependency and build management.  Java 8 is also used.  
 It utilizes JSoup to parse the page.
 
-The endpoint can be reached at `http://localhost:8080/?query=`
+The endpoint can be reached at `http://localhost:8080/search?query=`
 The query is a required parameter
 
 ## How to Run

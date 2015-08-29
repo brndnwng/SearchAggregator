@@ -9,8 +9,12 @@ import com.bran.search.service.SearchAggregator;
 import com.bran.searchengine.Bing;
 import com.bran.searchengine.DuckDuckGo;
 import com.bran.searchengine.Google;
-import com.bran.searchengine.SearchEngine;
-
+/**
+ * Configuration for the spring boot application.
+ * To add new search engines, just pass into searchAggregator bean
+ * @author bwong
+ *
+ */
 @SpringBootApplication
 @ComponentScan("com.bran.controllers")
 public class Application {
